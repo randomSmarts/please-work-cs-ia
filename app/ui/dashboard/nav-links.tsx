@@ -2,7 +2,7 @@ import {
   UserGroupIcon,
   HomeIcon,
   InboxIcon,
-} from '@heroicons/react/24/outline';
+} from '@heroicons/react/20/solid';
 import Link from 'next/link';
 import {DocumentDuplicateIcon} from "@heroicons/react/16/solid";
 

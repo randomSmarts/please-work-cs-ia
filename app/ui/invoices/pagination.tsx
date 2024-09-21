@@ -3,6 +3,7 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import { generatePagination } from '@/app/lib/utils';
+import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export default function Pagination({ totalPages }: { totalPages: number }) {
   // NOTE: Uncomment this code in Chapter 11
@@ -93,7 +94,7 @@ function PaginationArrow({
 }) {
   const className = clsx(
     'flex h-10 w-10 items-center justify-center rounded-md border',
-    {
+      {
       'pointer-events-none text-gray-300': isDisabled,
       'hover:bg-gray-100': !isDisabled,
       'mr-2 md:mr-4': direction === 'left',
